@@ -8,15 +8,16 @@
   <SoftwareConfiguration>
     <Pous>
       <ProgramOrganizationUnits>
-        <Name>New POU</Name>
+        <Name>POU Name</Name>
         <SectionNumber>1</SectionNumber>
+        <Comment>POU Comment</Comment>
         <Rungs>
           <RungEntity>
             <LadderElements>
               <LadderEntity>
                 <ElementType>NormalContact</ElementType>
                 <Descriptor>%I0.0</Descriptor>
-                <Comment />
+                <Comment>Input</Comment>
                 <Symbol />
                 <Row>0</Row>
                 <Column>0</Column>
@@ -25,7 +26,7 @@
               <LadderEntity>
                 <ElementType>Coil</ElementType>
                 <Descriptor>%Q0.0</Descriptor>
-                <Comment />
+                <Comment>Output</Comment>
                 <Symbol />
                 <Row>0</Row>
                 <Column>10</Column>
@@ -96,6 +97,96 @@
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
+            <Name>Name</Name>
+            <MainComment>Comment</MainComment>
+            <Label />
+            <IsLadderSelected>true</IsLadderSelected>
+          </RungEntity>
+          <RungEntity>
+            <LadderElements>
+              <LadderEntity>
+                <ElementType>NormalContact</ElementType>
+                <Descriptor>%I0.1</Descriptor>
+                <Comment />
+                <Symbol />
+                <Row>0</Row>
+                <Column>0</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Coil</ElementType>
+                <Descriptor>%Q0.1</Descriptor>
+                <Comment />
+                <Symbol />
+                <Row>0</Row>
+                <Column>10</Column>
+                <ChosenConnection>Left</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>9</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>8</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>7</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>6</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>5</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>4</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>3</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>2</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>1</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+            </LadderElements>
+            <InstructionLines>
+              <InstructionLineEntity>
+                <InstructionLine>LD    %I0.1</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>ST    %Q0.1</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+            </InstructionLines>
             <Name />
             <MainComment />
             <Label />
@@ -103,6 +194,638 @@
           </RungEntity>
         </Rungs>
       </ProgramOrganizationUnits>
+      <ProgramOrganizationUnits>
+        <Name>New POU</Name>
+        <SectionNumber>2</SectionNumber>
+        <Rungs>
+          <RungEntity>
+            <LadderElements />
+            <InstructionLines>
+              <InstructionLineEntity>
+                <InstructionLine>LD    %I0.2</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>ST    %Q0.2</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+            </InstructionLines>
+            <Name />
+            <MainComment />
+            <Label />
+            <IsLadderSelected>false</IsLadderSelected>
+          </RungEntity>
+        </Rungs>
+      </ProgramOrganizationUnits>
+      <GrafcetPou>
+        <Name>Grafcet POU</Name>
+        <SectionNumber>0</SectionNumber>
+        <Elements>
+          <GrafcetNodeStep>
+            <Id>2b57c0d3-1c56-4275-b6ed-efe0ea08bae5</Id>
+            <Row>0</Row>
+            <Column>0</Column>
+            <IsInitialStep>true</IsInitialStep>
+            <StepPou>
+              <Name>Step_1</Name>
+              <SectionNumber>3</SectionNumber>
+              <Rungs>
+                <RungEntity>
+                  <LadderElements>
+                    <LadderEntity>
+                      <ElementType>Coil</ElementType>
+                      <Descriptor>%Q0.3</Descriptor>
+                      <Comment />
+                      <Symbol />
+                      <Row>0</Row>
+                      <Column>10</Column>
+                      <ChosenConnection>Left</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>9</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>8</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>7</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>6</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>5</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>4</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>3</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>2</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>1</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>0</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                  </LadderElements>
+                  <InstructionLines>
+                    <InstructionLineEntity>
+                      <InstructionLine>LD    1</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                    <InstructionLineEntity>
+                      <InstructionLine>ST    %Q0.3</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                  </InstructionLines>
+                  <Name />
+                  <MainComment />
+                  <Label />
+                  <IsLadderSelected>true</IsLadderSelected>
+                </RungEntity>
+              </Rungs>
+              <StepNumber>1</StepNumber>
+            </StepPou>
+            <From>c1f4ad7c-80ce-4b06-adc9-2c85b5b1a97f</From>
+            <To>57073ead-de16-44f7-b302-49cd5dfc81dd</To>
+          </GrafcetNodeStep>
+          <GrafcetNodeStep>
+            <Id>67b705d3-c45b-44e7-8653-4fab446a11b6</Id>
+            <Row>1</Row>
+            <Column>0</Column>
+            <IsInitialStep>false</IsInitialStep>
+            <StepPou>
+              <Name>Step_2</Name>
+              <SectionNumber>4</SectionNumber>
+              <Rungs>
+                <RungEntity>
+                  <LadderElements>
+                    <LadderEntity>
+                      <ElementType>Coil</ElementType>
+                      <Descriptor>%Q0.4</Descriptor>
+                      <Comment />
+                      <Symbol />
+                      <Row>0</Row>
+                      <Column>10</Column>
+                      <ChosenConnection>Left</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>9</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>8</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>7</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>6</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>5</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>4</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>3</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>2</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>1</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>0</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                  </LadderElements>
+                  <InstructionLines>
+                    <InstructionLineEntity>
+                      <InstructionLine>LD    1</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                    <InstructionLineEntity>
+                      <InstructionLine>ST    %Q0.4</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                  </InstructionLines>
+                  <Name />
+                  <MainComment />
+                  <Label />
+                  <IsLadderSelected>true</IsLadderSelected>
+                </RungEntity>
+              </Rungs>
+              <StepNumber>2</StepNumber>
+            </StepPou>
+            <From>57073ead-de16-44f7-b302-49cd5dfc81dd</From>
+            <To>fe368b6f-c6fc-46aa-b8c1-2a89bff365d7</To>
+          </GrafcetNodeStep>
+          <GrafcetNodeStep>
+            <Id>89469855-fc99-4356-a83c-0f1998751252</Id>
+            <Row>2</Row>
+            <Column>0</Column>
+            <IsInitialStep>false</IsInitialStep>
+            <StepPou>
+              <Name>Step_3</Name>
+              <SectionNumber>5</SectionNumber>
+              <Rungs>
+                <RungEntity>
+                  <LadderElements>
+                    <LadderEntity>
+                      <ElementType>Coil</ElementType>
+                      <Descriptor>%Q0.5</Descriptor>
+                      <Comment />
+                      <Symbol />
+                      <Row>0</Row>
+                      <Column>10</Column>
+                      <ChosenConnection>Left</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>9</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>8</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>7</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>6</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>5</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>4</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>3</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>2</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>1</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>0</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                  </LadderElements>
+                  <InstructionLines>
+                    <InstructionLineEntity>
+                      <InstructionLine>LD    1</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                    <InstructionLineEntity>
+                      <InstructionLine>ST    %Q0.5</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                  </InstructionLines>
+                  <Name />
+                  <MainComment />
+                  <Label />
+                  <IsLadderSelected>true</IsLadderSelected>
+                </RungEntity>
+              </Rungs>
+              <StepNumber>3</StepNumber>
+            </StepPou>
+            <From>fe368b6f-c6fc-46aa-b8c1-2a89bff365d7</From>
+            <To>c1f4ad7c-80ce-4b06-adc9-2c85b5b1a97f</To>
+          </GrafcetNodeStep>
+          <GrafcetTransition>
+            <Id>57073ead-de16-44f7-b302-49cd5dfc81dd</Id>
+            <Row>0</Row>
+            <Column>0</Column>
+            <ProgramOrganizationUnits>
+              <SectionNumber>0</SectionNumber>
+              <Rungs>
+                <RungEntity>
+                  <LadderElements>
+                    <LadderEntity>
+                      <ElementType>EndT</ElementType>
+                      <Row>0</Row>
+                      <Column>10</Column>
+                      <ChosenConnection>Left</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>9</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>8</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>7</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>6</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>5</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>4</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>3</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>2</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>1</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>NormalContact</ElementType>
+                      <Descriptor>%Q0.3</Descriptor>
+                      <Comment />
+                      <Symbol />
+                      <Row>0</Row>
+                      <Column>0</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                  </LadderElements>
+                  <InstructionLines>
+                    <InstructionLineEntity>
+                      <InstructionLine>LD    %Q0.3</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                    <InstructionLineEntity>
+                      <InstructionLine>ENDT</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                  </InstructionLines>
+                  <Name>Tr1</Name>
+                  <MainComment />
+                  <Label />
+                  <IsLadderSelected>true</IsLadderSelected>
+                </RungEntity>
+              </Rungs>
+            </ProgramOrganizationUnits>
+            <From>2b57c0d3-1c56-4275-b6ed-efe0ea08bae5</From>
+            <To>67b705d3-c45b-44e7-8653-4fab446a11b6</To>
+          </GrafcetTransition>
+          <GrafcetTransition>
+            <Id>fe368b6f-c6fc-46aa-b8c1-2a89bff365d7</Id>
+            <Row>1</Row>
+            <Column>0</Column>
+            <ProgramOrganizationUnits>
+              <SectionNumber>0</SectionNumber>
+              <Rungs>
+                <RungEntity>
+                  <LadderElements>
+                    <LadderEntity>
+                      <ElementType>EndT</ElementType>
+                      <Row>0</Row>
+                      <Column>10</Column>
+                      <ChosenConnection>Left</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>9</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>8</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>7</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>6</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>5</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>4</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>3</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>2</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>1</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>NormalContact</ElementType>
+                      <Descriptor>%Q0.4</Descriptor>
+                      <Comment />
+                      <Symbol />
+                      <Row>0</Row>
+                      <Column>0</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                  </LadderElements>
+                  <InstructionLines>
+                    <InstructionLineEntity>
+                      <InstructionLine>LD    %Q0.4</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                    <InstructionLineEntity>
+                      <InstructionLine>ENDT</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                  </InstructionLines>
+                  <Name>Tr2</Name>
+                  <MainComment />
+                  <Label />
+                  <IsLadderSelected>true</IsLadderSelected>
+                </RungEntity>
+              </Rungs>
+            </ProgramOrganizationUnits>
+            <From>67b705d3-c45b-44e7-8653-4fab446a11b6</From>
+            <To>89469855-fc99-4356-a83c-0f1998751252</To>
+          </GrafcetTransition>
+          <GrafcetTransition>
+            <Id>c1f4ad7c-80ce-4b06-adc9-2c85b5b1a97f</Id>
+            <Row>2</Row>
+            <Column>0</Column>
+            <ProgramOrganizationUnits>
+              <SectionNumber>0</SectionNumber>
+              <Rungs>
+                <RungEntity>
+                  <LadderElements>
+                    <LadderEntity>
+                      <ElementType>EndT</ElementType>
+                      <Row>0</Row>
+                      <Column>10</Column>
+                      <ChosenConnection>Left</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>9</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>8</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>7</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>6</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>5</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>4</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>3</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>2</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>Line</ElementType>
+                      <Row>0</Row>
+                      <Column>1</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                    <LadderEntity>
+                      <ElementType>NormalContact</ElementType>
+                      <Descriptor>%Q0.5</Descriptor>
+                      <Comment />
+                      <Symbol />
+                      <Row>0</Row>
+                      <Column>0</Column>
+                      <ChosenConnection>Left, Right</ChosenConnection>
+                    </LadderEntity>
+                  </LadderElements>
+                  <InstructionLines>
+                    <InstructionLineEntity>
+                      <InstructionLine>LD    %Q0.5</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                    <InstructionLineEntity>
+                      <InstructionLine>ENDT</InstructionLine>
+                      <Comment />
+                    </InstructionLineEntity>
+                  </InstructionLines>
+                  <Name>Tr3</Name>
+                  <MainComment />
+                  <Label />
+                  <IsLadderSelected>true</IsLadderSelected>
+                </RungEntity>
+              </Rungs>
+            </ProgramOrganizationUnits>
+            <From>89469855-fc99-4356-a83c-0f1998751252</From>
+            <To>2b57c0d3-1c56-4275-b6ed-efe0ea08bae5</To>
+          </GrafcetTransition>
+        </Elements>
+      </GrafcetPou>
     </Pous>
     <Subroutines />
     <WatchLists />
@@ -1544,6 +2267,7 @@
           <DiscretInput>
             <Address>%I0.0</Address>
             <Index>0</Index>
+            <Comment>Input</Comment>
           </DiscretInput>
           <DiscretInput>
             <Address>%I0.1</Address>
@@ -1602,6 +2326,7 @@
           <DiscretOutput>
             <Address>%Q0.0</Address>
             <Index>0</Index>
+            <Comment>Output</Comment>
           </DiscretOutput>
           <DiscretOutput>
             <Address>%Q0.1</Address>
@@ -1960,7 +2685,7 @@
             <InputAssemblyInstance>0</InputAssemblyInstance>
           </EthernetIpEntity>
           <ProgrammingProtocolEnabled>false</ProgrammingProtocolEnabled>
-          <EthernetIpAdapterEnabled>false</EthernetIpAdapterEnabled>
+          <EthernetIpAdapterEnabled>true</EthernetIpAdapterEnabled>
           <ModbusServerEnabled>false</ModbusServerEnabled>
           <AutoDiscoveryProtocolEnabled>false</AutoDiscoveryProtocolEnabled>
         </EthernetConfiguration>
@@ -2059,10 +2784,16 @@
     <Translations />
   </DisplayUserLabelsConfiguration>
   <GlobalProperties>
-    <UserInformations />
-    <CompanyInformations />
+    <UserInformations>
+      <FirstName>Tyrone</FirstName>
+      <Country>New Zealand</Country>
+    </UserInformations>
+    <CompanyInformations>
+      <WebSite>tyrone.zone</WebSite>
+    </CompanyInformations>
     <ProjectInformations>
-      <Name>New project</Name>
+      <Name>Test</Name>
+      <Description>Testing git for versioning control</Description>
     </ProjectInformations>
     <ProjectProtection>
       <Active>false</Active>
